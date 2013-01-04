@@ -14,9 +14,11 @@ check_usage
 Dir.chdir(ARGV[0])
 File.open ARGV[1], 'w' do |mergedfile|
   Dir['*'].each do |f|
-    File.readlines(f).each_with_index do |line, i|
-      mergedfile << line if i > 0
-    end
+    if f != ARGV[1]
+      File.readlines(f).each_with_index do |line, i|
+        mergedfile << line if i > 0
+      end
+    end  
   end
 end
 
