@@ -55,7 +55,7 @@ CSV.foreach(input_file_path) do |row|
   end
 end
 
-File.open(File.join(input_dirname, symbol + '_symbols.txt'), 'wb') do |file|
+File.open(File.join(output_dir_path, symbol + '_symbols.txt'), 'wb') do |file|
   soubory.each do |key, csv|
     file << key[0..1] + MONTHS[key[2]] + key[3..4] + ','
     csv.close
