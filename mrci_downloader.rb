@@ -5,8 +5,8 @@ require 'mechanize'
 
 
 def check_usage
-  unless ARGV.length == 1
-    puts "Usage: mrci_dovnloader.rb password_to_mrci_account"
+  unless ARGV.length == 2
+    puts "Usage: mrci_dovnloader.rb password_to_mrci_account output_dir"
     exit
   end
 end
@@ -33,7 +33,9 @@ page = agent.page.link_with(:text => 'Special Spread Charts').click
 
 links = agent.page.links_with(:href => /specialspreadchartsdownload/)
 
-Dir.chdir('c:\Users\t\trading\mrci\download')
+output_dir = File.join(ARGV[1],Time.now.strftime("%Y-%m-%d"))
+Dir.mkdir(output_dir)
+Dir.chdir(output_dir)
 
 links.each do |link|
   link.click.save 
