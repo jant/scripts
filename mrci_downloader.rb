@@ -38,8 +38,17 @@ Dir.mkdir(output_dir)
 Dir.chdir(output_dir)
 
 links.each do |link|
-  link.click.save 
-  print '.'  
+  begin
+    link.click.save 
+    print '.'  
+  rescue
+    begin
+      link.click.save 
+    rescue
+      puts
+      puts 'ERROR ' + link
+    end 
+  end
 end
 
 
