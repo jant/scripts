@@ -24,12 +24,8 @@ form.username = 'tjanousek@volny.cz'
 form.passwd = ARGV[0]
 
 page = agent.submit(form, form.buttons.first)
-
-page = agent.page.link_with(:text => 'MRCI Online').click
+page = agent.page.link_with(:href => '/web/mrci-online.html').click
 page = agent.page.link_with(:text => 'Special Spread Charts').click
-
-#page = agent.page.link_with(:href => '/specialspreadchartsdownload-135.htm').click
-#page.save
 
 links = agent.page.links_with(:href => /specialspreadchartsdownload/)
 
@@ -46,7 +42,7 @@ links.each do |link|
       link.click.save 
     rescue
       puts
-      puts 'ERROR ' + link
+      puts 'ERROR ' + link.text
     end 
   end
 end
