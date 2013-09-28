@@ -6,7 +6,7 @@ require 'mechanize'
 
 def check_usage
   unless ARGV.length == 2
-    puts "Usage: mrci_dovnloader.rb password_to_mrci_account output_dir"
+    puts "Usage: ruby c:\t\scripts\mrci_downloader.rb password_to_mrci_account c:\temp"
     exit
   end
 end

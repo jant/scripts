@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2013-09-28 15:38:31">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="pokus" xmi.id="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_6C1910C3_3C77_409e_A3EF_38F06CD54555"/>
+						<UML:TaggedValue tag="ea_package_id" value="23"/>
+						<UML:TaggedValue tag="created" value="2013-09-27 00:00:00"/>
+						<UML:TaggedValue tag="modified" value="2013-09-27 00:00:00"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="c:\t\scripts\linker\vystup.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2013-09-28 15:35:37"/>
+						<UML:TaggedValue tag="lastsavedate" value="2013-09-28 15:35:37"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="packageFlags" value="isModel=1;Recurse=1;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="Janousek"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Class name="MojeTrida" xmi.id="EAID_15E9D573_93F2_4fdf_8FD2_4C922C6D4BA9" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-27 09:50:22"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-27 09:50:22"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="7"/>
+								<UML:TaggedValue tag="ea_localid" value="114"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="cislo" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="eaxmiid0"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="int"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="length" value="0"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="precision" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="1"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{6AC9E420-9990-44d1-A628-10AFDDCBA9D7}"/>
+										<UML:TaggedValue tag="ea_localid" value="22"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:UseCase name="Budovy" xmi.id="EAID_2128E80C_321E_4988_8446_125BC0F05C28" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="p&#345;ehled"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Ned&#283;lá nic moc.&#xA;&#xA;&lt;b&gt;P&#345;edpoklady&lt;/b&gt;&#xA;Bla bla bla&#xA;&#xA;&lt;b&gt;Scéná&#345;&lt;/b&gt;&#xA;Pokud n&#283;co == n&#283;co jiného tak &lt;a href=&quot;$element://{62B668C8-704C-4705-A376-A9B00F19DE31}&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;Provedení n&#283;&#269;eho&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;&#xA;Jinak &lt;a href=&quot;$element://{2FA28181-833B-4cf7-AE2B-84FE3F752C87}&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;Uzav&#345;ení&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;&#xA;&#xA;[[uc_co_neexistuje]]&#xA;[[chybny_odkaz]]&#xA;&#xA;&lt;b&gt;Funkce&lt;/b&gt;&#xA;&lt;a href=&quot;$element://{FFD83C53-8290-43a2-B865-0584D2465243}&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;karta Položka nájmu&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="UseCase"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-27 09:48:55"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-28 15:08:48"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="p&#345;ehled"/>
+								<UML:TaggedValue tag="tpos" value="1"/>
+								<UML:TaggedValue tag="ea_localid" value="115"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={E692CD2D-0E16-43b6-A7D3-CBB75FDCBF23}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=p&#345;ehled;GUID={F71AA7CF-B88D-410b-B1B0-BF83306E6614};@ENDSTEREO;$DES;$CLT={2128E80C-321E-4988-8446-125BC0F05C28}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:UseCase>
+						<UML:UseCase name="Uzav&#345;ení" xmi.id="EAID_2FA28181_833B_4cf7_AE2B_84FE3F752C87" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Použije se &lt;a href=&quot;$element://{2128E80C-321E-4988-8446-125BC0F05C28}&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;p&#345;ehled Budovy&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="UseCase"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-28 14:31:08"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-28 14:57:31"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="4"/>
+								<UML:TaggedValue tag="ea_localid" value="116"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:UseCase>
+						<UML:UseCase name="Provedení n&#283;&#269;eho" xmi.id="EAID_62B668C8_704C_4705_A376_A9B00F19DE31" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="N&#283;co se provede&#xA;&#xA;&lt;b&gt;P&#345;edpoklady&lt;/b&gt;&#xA;Bla bla bla&#xA;&#xA;&lt;b&gt;Scéná&#345;&lt;/b&gt;&#xA;Provede se &lt;a href=&quot;$element://{2FA28181-833B-4cf7-AE2B-84FE3F752C87}&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;Uzav&#345;ení&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="UseCase"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-28 13:42:39"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-28 15:30:57"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="3"/>
+								<UML:TaggedValue tag="ea_localid" value="117"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:UseCase>
+						<UML:UseCase name="Položka nájmu" xmi.id="EAID_D540E907_214F_4952_849B_3B8FF0493F58" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="založení"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Založení &lt;a href=&quot;$element://{15E9D573-93F2-4fdf-8FD2-4C922C6D4BA9}&quot;&gt;&lt;font color=&quot;#ff0080&quot;&gt;&lt;u&gt;PolozkaNajmu&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;&#xA;&#xA;- &#268;íslo: [[PolozkaNajmu_cislo]]"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="UseCase"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-28 15:08:12"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-28 15:38:20"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="založení"/>
+								<UML:TaggedValue tag="tpos" value="5"/>
+								<UML:TaggedValue tag="ea_localid" value="118"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={AE43EDCE-7611-4eb5-A0F7-992E94112837}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=založení;GUID={AB470E9E-ECC7-43a9-8EC4-6B51EC385077};@ENDSTEREO;$DES;$CLT={D540E907-214F-4952-849B-3B8FF0493F58}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:UseCase>
+						<UML:UseCase name="Položka nájmu" xmi.id="EAID_E4F8968C_346B_41ef_A47D_23A2EC4E4897" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="evidence"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Použije se &lt;a href=&quot;$element://{D540E907-214F-4952-849B-3B8FF0493F58}&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;&lt;u&gt;založení Položka nájmu&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="UseCase"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-28 15:09:50"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-28 15:10:40"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="evidence"/>
+								<UML:TaggedValue tag="tpos" value="6"/>
+								<UML:TaggedValue tag="ea_localid" value="119"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={C8A2D458-E4EA-4725-B84C-B045A0E59805}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=evidence;GUID={542611B6-9742-4612-8323-1AC96C1CDAD4};@ENDSTEREO;$DES;$CLT={E4F8968C-346B-41ef-A47D-23A2EC4E4897}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:UseCase>
+						<UML:UseCase name="Položka nájmu" xmi.id="EAID_FFD83C53_8290_43a2_B865_0584D2465243" visibility="public" namespace="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="karta"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Taky ned&#283;lá nic moc.&#xA;&#xA;&lt;b&gt;P&#345;edpoklady&lt;/b&gt;&#xA;Bla bla bla&#xA;&#xA;&lt;b&gt;Scéná&#345;&lt;/b&gt;&#xA;Johoho"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="UseCase"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_F06C066E_A1A8_4f83_A9CB_5C230CDE2A0D"/>
+								<UML:TaggedValue tag="date_created" value="2013-09-27 17:12:02"/>
+								<UML:TaggedValue tag="date_modified" value="2013-09-28 15:09:16"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="pokus"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="Janousek"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="karta"/>
+								<UML:TaggedValue tag="tpos" value="2"/>
+								<UML:TaggedValue tag="ea_localid" value="120"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9BACA9DD-0F09-48ce-B206-3C39195151B3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=karta;GUID={156E9EEF-BA91-436f-9F6B-475C32864D7B};@ENDSTEREO;$DES;$CLT={FFD83C53-8290-43a2-B865-0584D2465243}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:UseCase>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:DataType xmi.id="eaxmiid0" name="int" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
