@@ -29,6 +29,17 @@ class TestLinker < Test::Unit::TestCase
     assert_no_match /^==[^=.]+==/, text, 'Nebyly odstraneny == ze zacatku nadpisu'
     assert_match %r|^<b>Předpoklady</b>|, text, 'UC neobsahuje tucny nadpis Předpoklady'  
     assert_match %r|^Pokud něco == něco jiného|, text, 'UC neobsahuje test rovnosti'
+
+    text = @doc.xpath("//UML:Class[@name='PolozkaNajmu']//UML:TaggedValue[@tag='documentation']/@value")[0]
+    assert_not_nil text, "nenalezen text Class 'PolozkaNajmu'"
+    assert_no_match /^==[^=.]+==/, text, 'Nebyly odstraneny == ze zacatku nadpisu'
+    assert_match %r|^<b>Omezení</b>|, text, 'UC neobsahuje tucny nadpis Omezení'  
+
+    text = @doc.xpath("//UML:Class[@name='PolozkaNajmu']//UML:Attribute[@name='cislo']//UML:TaggedValue[@tag='description']/@value")[0]
+    assert_not_nil text, "nenalezen text Attribute 'PolozkaNajmu.cislo'"
+    assert_no_match /^==[^=.]+==/, text, 'Nebyly odstraneny == ze zacatku nadpisu'
+    assert_match %r|^<b>Omezení</b>|, text, 'UC neobsahuje tucny nadpis Omezení'  
+    
   end
 
  
@@ -52,7 +63,7 @@ class TestLinker < Test::Unit::TestCase
   
   def test_hyperlinku_na_uc
     text = @doc.xpath("//UML:UseCase[@name='Budovy']//UML:TaggedValue[@tag='documentation']/@value")[0]
-    assert_match %r|#0000ff"><u>karta Položka nájmu</u></font></a>|, text, 'UC neobsahuje hyperlink uc_karta_polozka_najmu'  
+    assert_match %r|#ff0080"><u>karta Položka nájmu</u></font></a>|, text, 'UC neobsahuje hyperlink uc_karta_polozka_najmu'  
     assert_match /\[\[uc_co_neexistuje\]\]/, text, 'Toto se nesmi zmenit'
   end  
 
