@@ -1,4 +1,4 @@
-# encoding: utf-8
+﻿# encoding: utf-8
 
 require 'test/unit'
 require './linker'
@@ -7,8 +7,8 @@ require 'nokogiri'
 class TestLinker < Test::Unit::TestCase
   
   def setup
-    @linker = Linker.new
-    @linker.go('vstup.xml')
+    @linker = Linker.new('w4sn')
+    @linker.go('vstup.xml', 'vystup.xml')
     f = File.open("vystup.xml")
     @doc = Nokogiri::XML(f)
     f.close
