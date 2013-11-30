@@ -25,4 +25,3 @@ nodes.each do |node|
   end
 end
 
-#//*[@id="futuresMonth"]/tbody/tr[4]/td[1]
