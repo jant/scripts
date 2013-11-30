@@ -9,7 +9,7 @@ STEREOTYPY = [
 "evidence",
 "zalozeni",
 "zmena",
-"zrusení",
+"smazani",
 "urceni",
 "sestava",
 "formular"
