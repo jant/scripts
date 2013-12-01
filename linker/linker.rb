@@ -46,6 +46,17 @@ class Linker
       # vyrobeni odkazu
       node.content = node.content.gsub(/\[\[\w+\]\]/) { |m| odkaz(m)}
     end
+
+    nodes = @doc.xpath(PREFIX + "/UML:Package[@name = '#{@project_name}']/UML:Namespace.ownedElement/UML:Package[@name='manifest']/UML:Namespace.ownedElement//UML:ModelElement.taggedValue//UML:TaggedValue[@tag='documentation']/@value")
+    nodes.each do |node|
+      print '.'
+      # ztucneni titulku
+      node.content = node.content.gsub(/^==([^=.]+)==/) { |m| '<b>' + $1.lstrip.rstrip + '</b>' }  
+      node.content = node.content.gsub(/^===([^=.]+)===/) { |m| '<b>' + $1.lstrip.rstrip + '</b>' }  
+      # vyrobeni odkazu
+      node.content = node.content.gsub(/\[\[\w+\]\]/) { |m| odkaz(m)}
+    end
+
   end  
 
   def odkaz(jmeno) 
