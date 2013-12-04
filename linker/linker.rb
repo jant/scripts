@@ -1,4 +1,4 @@
-# encoding: utf-8
+﻿# encoding: utf-8
 
 require 'fileutils'
 require 'nokogiri'
@@ -14,6 +14,8 @@ STEREOTYPY = [
 "sestava",
 "formular"
 ]
+
+CACHE = Hash.new
 
 BARVA_ODKAZU_UC = '#ff0080'
 BARVA_ODKAZU_TRIDA = '#0000ff'
@@ -60,24 +62,29 @@ class Linker
   end  
 
   def odkaz(jmeno) 
-    vnitrek = jmeno.lstrip.rstrip.gsub('[[', '').gsub(']]', '')
-    if vnitrek[0..2] == 'uc_'
-      odkaz_na_uc(jmeno)
-    elsif vnitrek[0..5] == 'ac_bp_'
-      odkaz_na_bp(jmeno)
-    elsif vnitrek.match('_') 
-      if vnitrek[-1,1] == '_'
-        odkaz_na_metodu(jmeno)
-      else  
-        ret = odkaz_na_atribut(jmeno)
-        if ret[0..1] == '[['
-          ret = odkaz_na_asociaci(jmeno)
+    if not CACHE.has_key?(jmeno)
+      vnitrek = jmeno.lstrip.rstrip.gsub('[[', '').gsub(']]', '')
+      if vnitrek[0..2] == 'uc_'
+        ret = odkaz_na_uc(jmeno)
+      elsif vnitrek[0..5] == 'ac_bp_'
+        ret = odkaz_na_bp(jmeno)
+      elsif vnitrek.match('_') 
+        if vnitrek[-1,1] == '_'
+          ret = odkaz_na_metodu(jmeno)
+        else  
+          ret = odkaz_na_atribut(jmeno)
+          if ret[0..1] == '[['
+            ret = odkaz_na_asociaci(jmeno)
+          end  
         end  
-        ret
-      end  
-    else 
-      odkaz_na_class(jmeno)
-    end    
+      else 
+        ret = odkaz_na_class(jmeno)
+      end
+      CACHE[jmeno] = ret  
+    else
+      ret = CACHE[jmeno]
+    end
+    ret	  
   end
 
   def odkaz_na_uc(jmeno)
