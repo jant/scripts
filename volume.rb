@@ -9,8 +9,10 @@ TABLE = {
 'LE'=> 'live-cattle',  
 'HE'=> 'lean-hogs',
 'GF'=> 'feeder-cattle',
-'ZC'=> 'corn'
-
+'ZC'=> 'corn',
+'ZW'=> 'wheat',
+'ZM'=> 'soybean-meal',
+'ZL'=> 'soybean-oil'
 }
 
 
@@ -24,8 +26,10 @@ end
 check_usage
 
 
-if not TABLE.has_key? ARGV[0]
-  puts 'Neznamy symbol ' + ARGV[0]
+symbol = ARGV[0]
+
+if not TABLE.has_key? symbol
+  puts 'Neznamy symbol ' + symbol
   puts 'Pouzij: '
   puts TABLE
   exit
@@ -35,7 +39,13 @@ browser = Watir::Browser.new
 
 browser.minimize
 
-browser.goto "http://www.cmegroup.com/trading/agricultural/livestock/#{TABLE[ARGV[0]]}_quotes_volume_voi.html"
+if ['LE','HE', 'GF'].include?(symbol)
+  folder = 'livestock'
+else
+  folder = 'grain-and-oilseed'
+end
+
+browser.goto "http://www.cmegroup.com/trading/agricultural/#{folder}/#{TABLE[symbol]}_quotes_volume_voi.html"
 
 until browser.table(:id=>"futuresMonth").exists? do sleep 1 end
 
